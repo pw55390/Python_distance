@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_471e26d8c2c61b0ece2f124ed2310034 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_471e26d8c2c61b0ece2f124ed2310034" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_471e26d8c2c61b0ece2f124ed2310034 = L.map(
+                "map_471e26d8c2c61b0ece2f124ed2310034",
+                {
+                    center: [25.72415, -40.98115],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_52a617b107d2546278d6c703ac2cb72e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_52a617b107d2546278d6c703ac2cb72e.addTo(map_471e26d8c2c61b0ece2f124ed2310034);
+        
+    
+            var marker_d5971c0b5d0cd841b99c7eff1278d837 = L.marker(
+                [8.9833, -79.5167],
+                {}
+            ).addTo(map_471e26d8c2c61b0ece2f124ed2310034);
+        
+    
+        var popup_aa1cf77ce4002ba25b82cda8c38ef6ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dcf5b2c4ef97732643c2c4e46f6c864a = $(`<div id="html_dcf5b2c4ef97732643c2c4e46f6c864a" style="width: 100.0%; height: 100.0%;">Panama City</div>`)[0];
+                popup_aa1cf77ce4002ba25b82cda8c38ef6ba.setContent(html_dcf5b2c4ef97732643c2c4e46f6c864a);
+            
+        
+
+        marker_d5971c0b5d0cd841b99c7eff1278d837.bindPopup(popup_aa1cf77ce4002ba25b82cda8c38ef6ba)
+        ;
+
+        
+    
+    
+            var marker_9b034f409ad834d8596e644a66363dd4 = L.marker(
+                [42.465, -2.4456],
+                {}
+            ).addTo(map_471e26d8c2c61b0ece2f124ed2310034);
+        
+    
+        var popup_721d426c8fe37cfea3c5e934dc67c842 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58e7428019bcf1d210394e6ab3141d93 = $(`<div id="html_58e7428019bcf1d210394e6ab3141d93" style="width: 100.0%; height: 100.0%;">Logrono</div>`)[0];
+                popup_721d426c8fe37cfea3c5e934dc67c842.setContent(html_58e7428019bcf1d210394e6ab3141d93);
+            
+        
+
+        marker_9b034f409ad834d8596e644a66363dd4.bindPopup(popup_721d426c8fe37cfea3c5e934dc67c842)
+        ;
+
+        
+    
+    
+            var poly_line_a392761fc9c4d1c35a6741bf6453ace2 = L.polyline(
+                [[8.9833, -79.5167], [42.465, -2.4456]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_471e26d8c2c61b0ece2f124ed2310034);
+        
+</script>
+</html>
